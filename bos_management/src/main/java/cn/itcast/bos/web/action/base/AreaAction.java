@@ -138,6 +138,7 @@ public class AreaAction extends BaseAction<Area> {
 		Page<Area> pageData = areaService.findPageData(specification, pageable);
 		// 压入值栈
 		pushPageDataToValueStack(pageData);
+		System.out.println("😁")
 
 		return SUCCESS;
 	}
